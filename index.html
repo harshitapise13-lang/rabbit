@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌈 Little Learners Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen">
+
+            <h1>🌈 Little Learners</h1>
+            <p class="subtitle">Tap the right answer! 🎉</p>
+
+            <!-- Progress -->
+            <div class="progress-section">
+                <div id="stars">☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆</div>
+
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+
+            <!-- Category -->
+            <div id="category" class="category">
+                🎨 Colors
+            </div>
+
+            <!-- Question -->
+            <h2 id="question">
+                Which one is red?
+            </h2>
+
+            <!-- Answers -->
+            <div id="answers" class="answers"></div>
+
+            <!-- Feedback -->
+            <div id="feedback"></div>
+
+            <button id="next-btn" class="next-btn hidden">
+                Next ➡️
+            </button>
+
+        </div>
+
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="hidden">
+
+            <div class="trophy">🏆</div>
+
+            <h1>Great Job! 🎉</h1>
+
+            <h2 id="score"></h2>
+
+            <p id="message"></p>
+
+            <div class="celebration">
+                🌟 🎈 🦄 🌈 🐶 🐱 🎉 ⭐
+            </div>
+
+            <button onclick="startGame()" class="play-again">
+                🔄 Play Again
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
